@@ -1,0 +1,501 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:  Helvetica, sans-serif;
+    /* background-color: #ea23d0; */
+    /* background-image: linear-gradient(to right, #907c20,#cfb41d  ); */
+    background: #768198; background: -moz-linear-gradient(to bottom,  #768198 0%,#bec6d8 100%); background: -webkit-linear-gradient(to bottom,  #768198 0%,#bec6d8 100%); background: linear-gradient(to bottom,  #768198 0%,#bec6d8 100%);
+
+}
+
+.error {
+    margin-top: 50px;
+    margin-bottom: 35px;
+    color: #3bff0a;
+}
+
+.pass {
+    margin-top: 50px !important;
+    color: #3bff0a;
+}
+
+
+.capcha {
+    /* margin:35px 0 50px 0; */
+    width: 70%;
+}
+
+.capcha .c {
+    margin: 0;
+}
+
+.capcha img{
+    margin: 50px auto 15px auto;
+}
+
+.alert-success {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+}
+
+.alert-success h1 {
+    width: 50%;
+    padding: 20px;
+    background-color: #17f403;
+    box-shadow: 0 0 5px #17f403,
+        0 0 15px #17f403,
+        0 0 3px #17f403,
+        0 0 50px #17f403;
+}
+
+.back {
+    width: 100%;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    margin-top: 500px;
+}
+
+.alertWarning {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+}
+
+.alertWarning h1 {
+    width: 50%;
+    padding: 20px;
+    background-color: #f43303;
+    box-shadow: 0 0 5px #f43303,
+        0 0 15px #f43303,
+        0 0 3px #f43303,
+        0 0 50px #f43303;
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 auto 50px auto;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.login-box .user-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.login-box .user{
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 7px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .file-box .file {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.inputFile {
+    width: 70%;
+    height: 50px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    margin-left: 12%;
+    margin-top: 30px;
+}
+
+
+.inputFile+label {
+    width: 70%;
+    height: 30px;
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: 700;
+    color: #fff;
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 10px #03e9f4,
+        0 0 20px #03e9f4,
+        0 0 30px #03e9f4;
+    display: inline-block;
+    padding: 8pt 7pt 3pt 7pt;
+    -webkit-border-radius: 50pt;
+    -moz-border-radius: 50pt;
+    border-radius: 50pt;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-left: 12%;
+}
+
+.file-box .f:hover {
+    background-color: #03e9f4;
+
+}
+
+.login-box .user-box .c {
+    margin-bottom: 7px;
+}
+
+/* .file-box input:hover~label {
+    background-color: #03e9f4;
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 15px #03e9f4,
+        0 0 3px #03e9f4,
+        0 0 50px #03e9f4;
+}
+
+.file-box input:focus~label {
+    background-color: #03e9f4;
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 15px #03e9f4,
+        0 0 3px #03e9f4,
+        0 0 50px #03e9f4;
+} */
+
+/* .inputFile+input:focus~label,
+.inputFile+input:valid~label {
+    width: 70%;
+    height: 30px;
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: 700;
+    color: #fff;
+    background-color: #03e9f4;
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 10px #03e9f4,
+        0 0 20px #03e9f4,
+        0 0 30px #03e9f4;
+    display: inline-block;
+    padding: 8pt 7pt 3pt 7pt;
+    -webkit-border-radius: 50pt;
+    -moz-border-radius: 50pt;
+    border-radius: 50pt;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-left: 12%;
+} */
+
+.button {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 50px;
+    margin-left: 15%;
+    width: 70%;
+    height: 1px;
+}
+
+
+.login-box .file-box input:focus~.file,
+.login-box .file-box input:valid~.file {
+    top: -20px;
+    opacity: 1;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
+
+
+.login-box form button {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    cursor: pointer;
+
+}
+
+.login-box button:hover {
+    background: #03e9f4;
+    -webkit-box-reflect:below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.733));
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 25px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 70px #03e9f4;
+}
+
+.login-box button span {
+    position: absolute;
+    display: block;
+}
+
+.login-box button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.login-box button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.login-box button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.login-box button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+.back a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    color: #03e9f4;
+    font-size: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+.back a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 25px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 100px #03e9f4;
+}
+
+.back a span {
+    position: absolute;
+    display: block;
+}
+
+.back a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.back a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.back a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.back a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}

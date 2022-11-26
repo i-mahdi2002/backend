@@ -1,0 +1,194 @@
+html {
+  height: 100%;
+}
+
+body {
+
+  background: #768198;
+  background: -moz-linear-gradient(to bottom, #768198 0%, #bec6d8 100%);
+  background: -webkit-linear-gradient(to bottom, #768198 0%, #bec6d8 100%);
+  background: linear-gradient(to bottom, #768198 0%, #bec6d8 100%);
+  font-family: tahoma, geneva, sans-serif;
+  font-size: 13px;
+}
+
+.container {
+  border: solid 10px rgb(77, 77, 77);
+  border-radius: 15px;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.6);
+  margin: 60px auto;
+  width: 80%;
+}
+
+.chatBox {
+  background-image: url('../bg/01.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: border-box;
+  height: 600px;
+  border-radius: 0px;
+  overflow-y: scroll;
+  border: solid 1px rgb(77, 77, 77);
+}
+
+.area {
+  font-size: 20px;
+  resize: none;
+  z-index: 1;
+  width: 100%;
+  height: 50px;
+  /* border-radius: 10px; */
+  margin-left: 0px;
+  outline: none;
+  padding-left: 5px;
+  /* overflow-y: hidden; */
+}
+
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0px -1px 13px #ffffff;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #313131e5;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #313131;
+  border-radius: 10px;
+}
+
+.area:focus {
+  border: none;
+}
+
+.sender {
+  direction: rtl;
+  /* box-shadow: 0 0 10px #03e9f4,
+  0 0 20px #03e9f4,
+  0 0 30px #03e9f4; */
+  padding: 10px;
+  font-weight: bold;
+  color: rgb(3, 233, 244);
+}
+
+.textMessage {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
+  padding: 8px;
+  margin-left: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 14px;
+}
+
+
+ .btn {
+	position: absolute;
+  z-index: 1;
+	/* top: 0;
+	left: 0; */
+  /* margin: ; */
+	width: 100px;
+	height: 35px;
+  margin-top: 7px; 
+	margin-left: 70%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+ .btn a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(78, 78, 78, 0.904);
+	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 30px;
+	/* padding: 10px; */
+	letter-spacing: 1px;
+	text-decoration: none;
+	overflow: hidden;
+	color: #fff;
+	font-weight: 400px;
+	z-index: 1;
+	transition: 0.5s;
+	backdrop-filter: blur(15px);
+}
+ .btn:hover a {
+	letter-spacing: 3px;
+}
+ .btn a::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+	transform: skewX(45deg) translate(0);
+	transition: 0.5s;
+	filter: blur(0px);
+}
+ .btn:hover a::before {
+	transform: skewX(45deg) translate(200px);
+}
+ /* .btn::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+	bottom: -5px;
+	width: 30px;
+	height: 10px;
+	background: rgb(0, 0, 0);
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0.5;
+}
+ .btn:hover::before lightup button {
+	/* bottom: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+}
+
+ .btn::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+	top: -5px;
+	width: 30px;
+	height: 10px;
+	background: rgb(0, 0, 0);
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0.5;
+}
+ .btn:hover::after /*lightup button {
+	/* top: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+} */
+ /* .btn:nth-child(1)::before, /*chnage 1*/
+ /* .btn:nth-child(1)::after {
+	background: #000000;
+	box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71,
+		0 0 60px #ff1f71; */
+/* } */
